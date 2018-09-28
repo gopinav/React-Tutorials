@@ -6,7 +6,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Greet />
+        <Greet name="Bruce" heroName="Batman" />
+        <Greet name="Clark" heroName="Superman" />
+        <Greet name="Diana" heroName="Wonder Woman" />
       </div>
     )
   }
