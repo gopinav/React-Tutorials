@@ -4,6 +4,7 @@ import Greet from './components/Greet'
 import Welcome from './components/Welcome'
 import Hello from './components/Hello'
 import Message from './components/Message'
+import Counter from './components/Counter'
 
 class App extends Component {
   render() {
@@ -19,9 +20,10 @@ class App extends Component {
         <Greet name="Diana" heroName="Wonder Woman" />
         <Welcome name="Bruce" heroName="Batman" />
         <Welcome name="Clark" heroName="Superman" />
-        <Welcome name="Diana" heroName="Wonder Woman" /> */}
+        <Welcome name="Diana" heroName="Wonder Woman" />
         <Message message='Welcome Visitor' />
-        <Message message='Welcome Guest' />
+        <Message message='Welcome Guest' /> */}
+        <Counter />
       </div>
     )
   }
