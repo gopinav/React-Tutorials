@@ -5,6 +5,7 @@ import Welcome from './components/Welcome'
 import Hello from './components/Hello'
 import Message from './components/Message'
 import Counter from './components/Counter'
+import FunctionClick from './components/FunctionClick'
 
 class App extends Component {
   render() {
@@ -22,8 +23,9 @@ class App extends Component {
         <Welcome name="Clark" heroName="Superman" />
         <Welcome name="Diana" heroName="Wonder Woman" />
         <Message message='Welcome Visitor' />
-        <Message message='Welcome Guest' /> */}
-        <Counter />
+        <Message message='Welcome Guest' />
+        <Counter />*/}
+        <FunctionClick />
       </div>
     )
   }
