@@ -7,7 +7,7 @@ class EventBind extends Component {
     this.state = {
       message: 'Hello'
     }
-    this.clickHandler = this.clickHandler.bind(this)
+    // this.clickHandler = this.clickHandler.bind(this)
   }
 
   // clickHandler() {
