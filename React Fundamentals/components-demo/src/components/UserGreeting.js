@@ -29,12 +29,18 @@ class UserGreeting extends Component {
   //   return <div>{message}</div>
   // }
 
+  // #ternary-operator-approach
+  // render() {
+  //   return this.state.isLoggedIn ? (
+  //     <div>Welcome Vishwas</div>
+  //   ) : (
+  //     <div>Welcome Guest</div>
+  //   )
+  // }
+
+  // #short-circuit-operator-approach
   render() {
-    return this.state.isLoggedIn ? (
-      <div>Welcome Vishwas</div>
-    ) : (
-      <div>Welcome Guest</div>
-    )
+    return this.state.isLoggedIn && <div>Welcome Vishwas</div>
   }
 }
 
