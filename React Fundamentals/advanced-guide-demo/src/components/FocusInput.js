@@ -8,6 +8,7 @@ class FocusInput extends Component {
   }
 
   clickHandler = () => {
+    console.log(this.componentRef.current)
     this.componentRef.current.focusInput()
   }
 
