@@ -9,12 +9,14 @@ import PortalDemo from './components/PortalDemo'
 import Hero from './components/Hero'
 import ErrorBoundary from './components/ErrorBoundary'
 import ParentComp from './components/ParentComp'
+import ClickCounter from './components/ClickCounter';
 
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<ParentComp />
+				<ClickCounter></ClickCounter>
+				{/* <ParentComp /> */}
 				{/* <Hero heroName="Batman" />
 				<Hero heroName="Superman" />
 				<ErrorBoundary>
