@@ -16,7 +16,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<ClickCounter />
+				<ClickCounter name='Vishwas' />
 				<HoverCounter />
 				{/* <ParentComp /> */}
 				{/* <Hero heroName="Batman" />
