@@ -11,15 +11,20 @@ import ErrorBoundary from './components/ErrorBoundary'
 import ParentComp from './components/ParentComp'
 import ClickCounter from './components/ClickCounter'
 import HoverCounter from './components/HoverCounter'
-import Counter from './components/Counter';
-import ClickCounterTwo from './components/ClickCounterTwo';
-import HoverCounterTwo from './components/HoverCounterTwo';
+import Counter from './components/Counter'
+import ClickCounterTwo from './components/ClickCounterTwo'
+import HoverCounterTwo from './components/HoverCounterTwo'
+import ComponentC from './components/ComponentC'
+import { UserProvider } from './components/userContext'
 
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<Counter
+				<UserProvider value='Vishwas'>
+					<ComponentC />
+				</UserProvider>
+				{/* <Counter
 					render={(count, incrementCount) =>
 					<ClickCounterTwo
 						count={count}
@@ -32,7 +37,7 @@ class App extends Component {
 						count={count}
 						incrementCount={incrementCount}>
 					</HoverCounterTwo>}>
-				</Counter>
+				</Counter> */}
 				{/* <ClickCounter name='Vishwas' /> */}
 				{/* <HoverCounter /> */}
 				{/* <ParentComp /> */}
