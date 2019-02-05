@@ -21,9 +21,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<UserProvider value='Vishwas'>
 					<ComponentC />
-				</UserProvider>
 				{/* <Counter
 					render={(count, incrementCount) =>
 					<ClickCounterTwo
