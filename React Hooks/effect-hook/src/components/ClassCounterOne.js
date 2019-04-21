@@ -19,9 +19,8 @@ class ClassCounterOne extends Component {
 	render() {
 		return (
 			<div>
-				<p>You clicked {this.state.count} times</p>
 				<button onClick={() => this.setState({ count: this.state.count + 1 })}>
-					Click me
+					Click {this.state.count} times
 				</button>
 			</div>
 		)
