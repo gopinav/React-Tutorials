@@ -9,7 +9,7 @@ class App extends Component {
 		return (
 			<div className="App">
 				<ClassCounterOne />
-				{/* <HookCounterOne /> */}
+				<HookCounterOne />
 				{/* <ClassCounterTwo></ClassCounterTwo> */}
 				{/* <HookCounterTwo></HookCounterTwo> */}
 			</div>
