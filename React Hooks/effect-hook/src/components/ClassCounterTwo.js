@@ -1,26 +1,23 @@
 import React, { Component } from 'react'
 
 class ClassCounterTwo extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      count: 0
-    }
-  }
+	constructor(props) {
+		super(props)
+
+		this.state = {
+			x: 0,
+			y: 0
+		}
+	}
 
 	componentDidMount() {
-		this.interval = setInterval(this.tick, 1000)
+		window.addEventListener('mousemove', e =>
+			this.setState({ x: e.clientX, y: e.clientY })
+		)
 	}
-	componentWillUnmount() {
-		clearInterval(this.interval)
-	}
-	tick = () => {
-		this.setState({
-			count: this.state.count + 1
-		})
-	}
+
 	render() {
-		return <h1>{this.state.count}</h1>
+    return <div>X - {this.state.x} Y - {this.state.y}</div>
 	}
 }
 
