@@ -1,12 +1,13 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
+import CounterOne from './components/CounterOne'
 
 function App() {
-  return (
-    <div className="App">
-
-    </div>
-  );
+	return (
+		<div className="App">
+			<CounterOne />
+		</div>
+	)
 }
 
-export default App;
+export default App
