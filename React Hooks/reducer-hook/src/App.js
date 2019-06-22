@@ -6,6 +6,7 @@ import CounterThree from './components/CounterThree'
 import ComponentA from './components/ComponentA'
 import ComponentB from './components/ComponentB'
 import ComponentC from './components/ComponentC'
+import DataFetchingOne from './components/DataFetchingOne'
 
 const initialState = 0
 const reducer = (state, action) => {
@@ -26,15 +27,18 @@ export const CountContext = React.createContext()
 function App() {
 	const [count, dispatch] = useReducer(reducer, initialState)
 	return (
-		<CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
+		<CountContext.Provider
+			value={{ countState: count, countDispatch: dispatch }}
+		>
 			<div className="App">
 				{/* <CounterOne /> */}
 				{/* <CounterTwo /> */}
 				{/* <CounterThree /> */}
-				{count}
-				<ComponentA />
-				<ComponentB />
-				<ComponentC />
+				{/* {count} */}
+				{/* <ComponentA /> */}
+				{/* <ComponentB /> */}
+				{/* <ComponentC /> */}
+				<DataFetchingOne />
 			</div>
 		</CountContext.Provider>
 	)
