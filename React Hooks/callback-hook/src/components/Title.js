@@ -4,7 +4,7 @@ function Title() {
   console.log('Rendering Title')
   return (
     <h2>
-      useReducer Hook
+      useCallback Hook
     </h2>
   )
 }
