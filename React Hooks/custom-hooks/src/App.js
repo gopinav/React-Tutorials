@@ -3,6 +3,7 @@ import './App.css'
 import DocTitleOne from './components/DocTitleOne'
 import DocTitleTwo from './components/DocTitleTwo'
 import CounterOne from './components/CounterOne'
+import CounterTwo from './components/CounterTwo'
 
 function App() {
 	return (
@@ -10,6 +11,7 @@ function App() {
 			{/* <DocTitleOne /> */}
 			{/* <DocTitleTwo /> */}
 			<CounterOne />
+			<CounterTwo />
 		</div>
 	)
 }
