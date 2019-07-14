@@ -2,7 +2,7 @@ import React from 'react'
 import useCounter from '../hooks/useCounter'
 
 function CounterOne() {
-	const [count, increment, decrement, reset] = useCounter(0)
+	const [count, increment, decrement, reset] = useCounter(0, 1)
 
 	return (
 		<div>
